@@ -1,0 +1,45 @@
+// Place all the styles related to the Spells controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body { 
+	background-color: #303030;
+	color: #ffffff;
+ }
+
+ a {
+ 	color: #ffffff;
+ }
+
+.block-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ .block {
+ 	background-color: #424242;
+ 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ 	mix-blend-mode: normal;
+ 	text-align: center;
+ 	font-size: 12px;
+ 	width: 50%;
+ 	min-height: 68px;
+ 	p {
+ 		padding-top: 10px;
+ 		padding-bottom: 10px;
+ 		padding-left: 10px;
+ 		padding-right: 10px;
+ 	}
+	p.single-line {
+		vertical-align: middle;
+		line-height: 68px;
+		display: inline-block; 
+	}
+ }
+
+ strong {
+ 	margin: auto;
+ 	text-align: center;
+ }

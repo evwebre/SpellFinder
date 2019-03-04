@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Spells</h1>
+
+<ul>
+<% @spells.each do |spell| %>
+    <li><%= link_to "#{spell.name}", spell %></li>
+<% end %>
+</ul>

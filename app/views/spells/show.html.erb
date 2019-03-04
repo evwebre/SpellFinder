@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<h2><%= @spell.name %></h2>
+<%= link_to 'Prev', spell_path(id: @spell.previous) %> |
+<%= link_to 'Next', spell_path(id: @spell.next) %> |
+<%= link_to 'Back', spells_path %>
+
+
+<div class="block-container">
+<h3>Description:</h3>
+<div class="block">
+<p>
+  <%= @spell.description %>
+</p>
+</div>
+</div>
+
+<% if !@spell.higher_level.empty? %>
+<div class="block-container">
+<h3>Higher Level</h3>
+<div class="block">
+<p>
+  <%= @spell.higher_level %>
+</p>
+</div>
+</div>
+<% end %>
+
+<div class="block-container">
+<h3>Range</h3>
+<div class="block">
+<p class="single-line">
+  <%= @spell.range %>
+</p>
+</div>
+</div>
+
+<div class="block-container">
+<h3>Casting Time</h3>
+<div class="block">
+<p class="single-line">
+  <%= @spell.casting_time %>
+</p>
+</div>
+</div>
+
+<div class="block-container">
+<h3>Classes</h3>
+<div class="block">
+<p class="single-line">
+  <%= @spell.classes %>
+</p>
+</div>
+</div>
